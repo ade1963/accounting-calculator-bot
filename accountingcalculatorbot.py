@@ -71,8 +71,8 @@ def start_cmd(update: Update, context: CallbackContext) -> None:
         f'Calculator \(Flutter\): https://github\.com/ade1963/flutter\-accounting\-calculator\.git\n\n'
         f'Commands:\n'
         f'/help\n'
-        f'/calc \- show Keyboard Button to call "web app" Calculator\n'
-        f'/feedback \.\.\.some text\.\.\. \- send message to admin\n',
+        f'/calc \- show Keyboard Button to call "web app" Calculator\.\n'
+        f'/feedback \.\.\.some text\.\.\. \- send message to admin\. Type text in same line with the command\.\n',
         reply_markup=make_calc_keyboard(),
     )
     logger.info(f'Start - {user.mention_markdown_v2()}')
@@ -82,10 +82,10 @@ def help_cmd(update: Update, context: CallbackContext) -> None:
     """ Command /help """
     user = update.effective_user
     update.message.reply_markdown_v2(
-        'Bot can be used to store history of private calculations\n\n'
+        'Bot can be used to store history of private calculations\.\n\n'
         f'/help\n'
-        f'/calc \- show Keyboard Button to call "web app" Calculator\n'
-        f'/feedback \.\.\.some text\.\.\. \- send message to admin\n',
+        f'/calc \- show Keyboard Button to call "web app" Calculator\.\n'
+        f'/feedback \.\.\.some text\.\.\. \- send message to admin\. Type text in same line with the command\.\n',
         reply_markup=make_calc_keyboard())
     logger.info(f'Help - {user.mention_markdown_v2()}')
 

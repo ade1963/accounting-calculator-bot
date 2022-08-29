@@ -10,3 +10,7 @@ Working bot: https://t.me/AccountingCalculatorBot
 Web app: https://accountingcalculator-37edb.web.app
 
 Flutter Web app sources: https://github.com/ade1963/flutter-accounting-calculator.git
+
+<p align="center">
+  <img src="docs/calculator.png">
+</p>
